@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-black p-[20px] font-serif">
+    <div class="flex gap-[20px] justify-center flex-wrap mb-[60px]">
+        <div>
+            <h2>Inputkan Limit</h2>
+            <input value id="inputLimit" type="number" placeholder="ex: 10" class="bg-black border-2 border-[#3e3e3e] rounded-lg text-white px-6 py-3 text-base hover:border-[#fff] cursor-pointer transition">
+        </div>
+        <div>
+            <h2>Inputkan Page</h2>
+            <input value id="inputCurrentPage" type="number" placeholder="ex: 10" class="bg-black border-2 border-[#3e3e3e] rounded-lg text-white px-6 py-3 text-base hover:border-[#fff] cursor-pointer transition">
+        </div>
+        <div>
+            <h2>Inputkan Title</h2>
+            <input value id="inputSearch" type="text" placeholder="ex: pemandangan" class="bg-black border-2 border-[#3e3e3e] rounded-lg text-white px-6 py-3 text-base hover:border-[#fff] cursor-pointer transition">
+        </div>
+    </div>
+    <div id="displayData" class="w-full flex justify-center gap-[20px] flex-wrap"></div>
+    
+    <div id="paginationInfo" class="flex justify-center gap-[20px] mt-4 text-white">
+        <span>Total Pages: <span id="totalPages"></span></span>
+        <span>Current Page: <span id="currentPage"></span></span>
+    </div>    
+    
+    <script src="script.js"></script>
+</body>
+</html>
